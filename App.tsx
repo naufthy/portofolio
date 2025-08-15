@@ -83,7 +83,7 @@ const Footer: React.FC = () => (
        <div className="flex justify-center space-x-6 mt-4">
           <a href="https://github.com/naufthy" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">GitHub</a>
           <a href="https://www.linkedin.com/in/tubagus-naufal-fathurahman/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">LinkedIn</a>
-          <a href="mailto:" className="text-gray-400 hover:text-purple-400 transition-colors">Email</a>
+          <a href="mailto:tubagus.naufal.f@gmail.com" className="text-gray-400 hover:text-purple-400 transition-colors">Email</a>
        </div>
     </div>
   </footer>
