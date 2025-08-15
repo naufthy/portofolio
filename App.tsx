@@ -11,7 +11,7 @@ const Header: React.FC = () => (
 
     <div className="relative z-10 p-8">
       <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-4 animate-fade-in-down">
-        Nama Anda
+        Tubagus Naufal Fathurahman
       </h1>
       <p className="text-xl md:text-2xl text-purple-300 font-light tracking-wide animate-fade-in-up">
         Fotografi · Machine Learning · Data Science · Astronomi
@@ -25,7 +25,7 @@ const About: React.FC = () => (
     <Section id="about" title="Tentang Saya">
         <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg text-gray-300 leading-relaxed">
-                Saya adalah seorang penjelajah multi-disiplin dengan hasrat mendalam pada titik temu antara seni dan teknologi. Dari menangkap keindahan kosmos melalui lensa fotografi hingga mengungkap pola tersembunyi dalam data dengan machine learning, saya terdorong oleh rasa ingin tahu untuk memahami dunia di sekitar kita—baik yang terlihat maupun yang tak kasat mata. Portfolio ini adalah cerminan perjalanan saya melintasi galaksi data, visi komputer, dan keindahan bintang.
+                Saya adalah seorang pengembara yang mencoba mengejar langitnya sendiri melalui Fotografi, Machine Learning, Data Science, dan tentunya astronomi. Proses pengembaraan ini didukung oleh sifat saya yang selalu ingin mempelajari hal baru dan memahaminya. Sebisa mungkin bermanfaat bagi sekitar dan selalu berharap menjadi manusia yang baik.
             </p>
         </div>
     </Section>
@@ -45,7 +45,7 @@ const Footer: React.FC = () => (
   <footer className="bg-gray-900/50 text-center py-8">
     <div className="container mx-auto px-6">
       <p className="text-gray-400">
-        &copy; {new Date().getFullYear()} Nama Anda. All Rights Reserved.
+        &copy; {new Date().getFullYear()} Tubagus Naufal Fathurahman. All Rights Reserved.
       </p>
        <div className="flex justify-center space-x-6 mt-4">
           <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">GitHub</a>
