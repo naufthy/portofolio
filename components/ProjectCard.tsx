@@ -19,7 +19,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       aria-label={hasLink ? `View project: ${project.title}` : undefined}
     >
       <div className="overflow-hidden">
-        <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+        <img
+          src={project.imageUrl}
+          alt={project.title}
+          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+          style={{ objectPosition: project.objectPosition || 'center' }}
+        />
       </div>
       <div className="p-5 flex flex-col flex-grow">
         <p className="text-sm font-semibold text-purple-400 uppercase tracking-wider">{project.category}</p>

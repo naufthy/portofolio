@@ -1,8 +1,9 @@
 
 import React from 'react';
-import { PROJECTS } from './constants';
+import { PROJECTS, INSTAGRAM_POSTS } from './constants';
 import ProjectCard from './components/ProjectCard';
 import Section from './components/Section';
+import InstagramCard from './components/InstagramCard';
 
 const Header: React.FC = () => (
   <header className="min-h-screen flex items-center justify-center text-center text-white relative overflow-hidden">
@@ -41,6 +42,38 @@ const Portfolio: React.FC = () => (
   </Section>
 );
 
+const InstagramSection: React.FC = () => (
+  <Section id="instagram" title="Jelajah Visual Saya">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
+      {INSTAGRAM_POSTS.slice(0, 3).map((post) => (
+        <InstagramCard key={post.id} post={post} />
+      ))}
+      <a
+        href="https://www.instagram.com/nawptie"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex aspect-square w-full items-center justify-center overflow-hidden rounded-lg bg-gray-800/50 text-center text-white transition-all duration-300 hover:bg-purple-900/50 border border-purple-500/20 hover:border-purple-500"
+        aria-label="See more on Instagram"
+      >
+        <div className="transition-transform duration-300 group-hover:scale-105">
+          <p className="font-semibold text-lg">Lihat Lebih Banyak</p>
+          <p className="text-sm text-purple-300">@nawptie</p>
+        </div>
+      </a>
+    </div>
+    <div className="mt-12 text-center">
+      <a
+        href="https://www.instagram.com/nawptie"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block rounded-lg bg-purple-600 px-8 py-3 text-base font-semibold text-white transition-transform duration-300 hover:scale-105 hover:bg-purple-700"
+      >
+        Ikuti Saya di Instagram
+      </a>
+    </div>
+  </Section>
+);
+
 const Footer: React.FC = () => (
   <footer className="bg-gray-900/50 text-center py-8">
     <div className="container mx-auto px-6">
@@ -48,9 +81,9 @@ const Footer: React.FC = () => (
         &copy; {new Date().getFullYear()} Tubagus Naufal Fathurahman. All Rights Reserved.
       </p>
        <div className="flex justify-center space-x-6 mt-4">
-          <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">GitHub</a>
-          <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">LinkedIn</a>
-          <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Email</a>
+          <a href="https://github.com/naufthy" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">GitHub</a>
+          <a href="https://www.linkedin.com/in/tubagus-naufal-fathurahman/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">LinkedIn</a>
+          <a href="mailto:" className="text-gray-400 hover:text-purple-400 transition-colors">Email</a>
        </div>
     </div>
   </footer>
@@ -77,6 +110,7 @@ const App: React.FC = () => {
         <div className="relative bg-gradient-to-b from-indigo-900/20 via-purple-900/10 to-gray-900">
             <About />
             <Portfolio />
+            <InstagramSection />
         </div>
         <Footer />
       </main>

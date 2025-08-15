@@ -7,4 +7,12 @@ export interface Project {
   imageUrl: string;
   tags: string[];
   link?: string;
+  objectPosition?: string;
+}
+
+export interface InstagramPost {
+  id: number;
+  imageUrl: string;
+  caption: string;
+  postUrl: string;
 }
